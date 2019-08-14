@@ -1288,6 +1288,7 @@ $(document).on('ready', function () {
 });
 
 
+
 $(window).on("scroll", function () {
     var scrolled = $(this).scrollTop();
     if (window.innerWidth >= 1024) {
