@@ -15,4 +15,28 @@ $(function(){
             console.log('no');
         }
     });
+
+
+    /*простые табы*/
+    $(document).on('click', '.tabs-menu a', function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("current");
+        $(this).parent().siblings().removeClass("current");
+        var tab = $(this).attr("href");
+        $('.tab').find(".tab-content").not(tab).css("display", "none");
+        // $(this).parents('.tabs-menu').parent().siblings('.tab').find(".tab-content").not(tab).css("display", "none");
+        $(tab).fadeIn();
+    });
+
+    $('.c-input, .c-textarea').focus(function(){
+        $(this).parents('.c-form-card').addClass('is-focus');
+    });
+    $('.c-input, .c-textarea').blur(function(){
+        if(!$(this).val().trim()){
+            $(this).parents('.c-form-card').removeClass('is-focus');
+        }
+
+    });
+
+    $('.c-select').SumoSelect();
 });
