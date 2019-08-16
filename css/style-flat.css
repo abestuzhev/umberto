@@ -1,3 +1,11 @@
+body {
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+}
+
+body * {
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
+}
+
 .header-top {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -320,8 +328,8 @@ a {
 }
 
 .header-nav-phone-list {
-    -webkit-transform: translateX(-300px);
-    transform: translateX(-300px);
+    -webkit-transform: translateX(-400px);
+    transform: translateX(-400px);
     -webkit-transition: transform .45s ease;
     -moz-transition: transform .45s ease;
     -ms-transition: transform .45s ease;
@@ -351,9 +359,10 @@ a {
     background: #FF7E00;
     border-radius: 20px;
     line-height: 1;
-    font-size: 16px;
     color: #ffffff;
     min-width: 160px;
+    font-size: 14px;
+    max-width: 160px;
     height: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -818,6 +827,7 @@ a {
     font-size: 20px;
     line-height: 1;
     margin: 10px 0 7px;
+    font-weight:700;
 }
 
 .lock-commodity-card-p_left {
