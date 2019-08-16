@@ -39,4 +39,10 @@ $(function(){
     });
 
     $('.c-select').SumoSelect();
+
+    $('.header-mobile-menu').on('click', function(e){
+        e.preventDefault();
+        $('.header-mobile-popup').toggleClass('is-visible');
+        $('.header-mobile-menu').toggleClass('active');
+    });
 });
