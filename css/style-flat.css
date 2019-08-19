@@ -1297,6 +1297,7 @@ a {
     flex-flow:row nowrap;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-bottom: 20px;
 }
 .banner-sale-body {
     padding: 40px 30px 50px;
