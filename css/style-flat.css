@@ -1,34 +1,11 @@
-@font-face {
-    font-family: 'MPLUSRounded1c';
-    src: url('./fonts/MPLUSRounded1c-Bold');
-    src: url('./fonts/MPLUSRounded1c-Bold.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/MPLUSRounded1c-Bold.woff2') format('woff2'),
-         url('./fonts/MPLUSRounded1c-Bold.woff') format('woff'),
-         url('./fonts/MPLUSRounded1c-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'MPLUSRounded1c';
-    src: url('./fonts/MPLUSRounded1c-Regular');
-    src: url('./fonts/MPLUSRounded1c-Regular.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/MPLUSRounded1c-Regular.woff2') format('woff2'),
-         url('./fonts/MPLUSRounded1c-Regular.woff') format('woff'),
-         url('./fonts/MPLUSRounded1c-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-
-}
 
 
 body {
-    font-family: 'MPLUSRounded1c', sans-serif !important;
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
 }
 
 body * {
-    font-family: 'MPLUSRounded1c', sans-serif !important;
+    font-family: 'M PLUS Rounded 1c', sans-serif !important;
 }
 
 .header-top {
