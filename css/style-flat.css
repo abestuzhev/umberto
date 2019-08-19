@@ -1472,4 +1472,21 @@ a {
     .block-commodity-card {
         margin-bottom: 0;
     }
+
+    .modal-dialog {
+        top: 0;
+    }
+
+    .modal .modal-close {
+        right: 20px;
+        top: 15px;
+        z-index: 99;
+        width: 25px;
+        height: 25px;
+    }
+
+    .modal .modal-close span {
+        background-color:#FF7E00;
+        width: 25px;
+    }
 }
