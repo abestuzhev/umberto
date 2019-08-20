@@ -1288,6 +1288,10 @@ a {
     line-height: 1;
 }
 
+.basket-div-p__span {
+    font-family: Arial !important;
+}
+
 /*-----------------------------------------*/
 /*media*/
 @media (max-width: 1240px) {
