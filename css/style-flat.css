@@ -619,7 +619,7 @@ a {
     text-align: left;
     margin-right: 0;
     width: 100%;
-    
+
 }
 
 .header-mobile-popup__menu .header-nav-menu__link {
@@ -1055,7 +1055,7 @@ a {
 }
 
 .modal-bottom {
-    padding: 0 77px 7px;  
+    padding: 0 77px 7px;
 }
 
 .modal-bottom__p {
@@ -1139,6 +1139,8 @@ a {
     background: #FF7E00;
     border: 2px solid #FFFFFF;
     opacity: .3;
+    width: 15px;
+    height: 15px;
 }
 
 .carousel-item {
