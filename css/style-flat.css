@@ -1151,6 +1151,11 @@ a {
     z-index: 5;
 }
 
+
+.partnership-div__collapse {
+  border: 1px solid #E0E0E0;
+}
+
     /*-----------------------------------------*/
 
 .menu-div4  {
