@@ -1544,6 +1544,10 @@ a {
     .modal-content-big-form-group-p {
         width: 200px;
     }
+
+    .form-group-modal__bottom {
+        margin-bottom: 12px;
+    }
 }
 
 @media (max-width: 576px) {
