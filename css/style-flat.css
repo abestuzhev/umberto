@@ -1599,3 +1599,42 @@ a {
         width: 25px;
     }
 }
+
+/* order */
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+/*-----------------------------------------*/
+
+.order-regulations {
+  margin: 40px 0;
+}
+
+.order-regulations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 590px;
+}
+
+.order-regulations-list__item {
+  font-size: 16px;
+  line-height: 24px;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  position: relative;
+  list-style: none;
+}
+
+.order-regulations-list__item::before {
+  content: '';
+  background:  url(../img/ico.png) 0 0 no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  width: 25px;
+  height: 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
