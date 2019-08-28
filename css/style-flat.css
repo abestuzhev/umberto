@@ -1606,6 +1606,13 @@ a {
 /*-----------------------------------------*/
 /*-----------------------------------------*/
 
+.order-title {
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
 .order-regulations {
   margin: 40px 0;
 }
@@ -1625,6 +1632,7 @@ a {
   margin-bottom: 20px;
   position: relative;
   list-style: none;
+  color: #333333;
 }
 
 .order-regulations-list__item::before {
@@ -1635,6 +1643,147 @@ a {
   width: 25px;
   height: 18px;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
+}
+
+.input-group-layout {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.input-group-label {
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #808080;
+}
+
+.c-form-list .number-spinner {
+    border: 1px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 8px 5px;
+    margin:0;
+    min-width: 115px;
+}
+.c-form-list .plusminus_img {
+    border-color: transparent;
+}
+
+.order-block {
+    margin: 30px 0;
+}
+.order-bonus {
+
+}
+
+
+.order-bonus-body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.c-radio-payment {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.c-radio-payment__item {
+    margin-right: 15px;
+}
+
+.c-radio-payment__input {
+    display: none;
+}
+
+.c-radio-payment__label {
+    background: #F2F2F2;
+    color: #9D9D9D;
+    border-radius: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.c-radio-payment__input:checked + .c-radio-payment__label {
+    background-color: #FFAC5C;
+    color: #ffffff;
+}
+
+.order-total {
+
+}
+
+.order-total-list {
+
+}
+
+.range-slider {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.order-total-list__item {
+    margin-bottom: 6px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #808080;
+}
+
+.order-total-sum {
+    color: #333333;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px
+}
+
+
+.ui-widget.ui-widget-content {
+    border: none;
+    height: 3px;
+    background-color: #E0E0E0;
+    width: 255px;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    background-color: #FFAC5C;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 5px solid #FF7E00;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -9px;
+}
+
+.sliderCont {
+    margin-right: 15px;
+}
+
+.formCost input {
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 7px 5px;
+    width:80px;
+    text-align: center;
 }

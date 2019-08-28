@@ -9,10 +9,10 @@ $(function(){
         if (HeaderCurrentPos <= scrollPos) {
             main.addClass("header-nav-fixed");
             // mainWrap.css("height" , mainHeight);
-            console.log('yes');
+            // console.log('yes');
         } else {
             main.removeClass("header-nav-fixed");
-            console.log('no');
+            // console.log('no');
         }
     });
 
@@ -46,5 +46,70 @@ $(function(){
         $('.header-mobile-menu').toggleClass('active');
     });
 
-    
+    /*range slider*/
+    function rangeSlider(slide, minValue){
+        $(slide).slider({
+            // min: 0,
+            // max: 700,
+            range: 'min',
+            stop: function(event, ui) {
+                $(minValue).val($(slide).slider("values",0));
+
+            },
+            slide: function(event, ui){
+                $(minValue).val($(slide).slider("values",0));
+            }
+        });
+
+        $(minValue).on('change', function(){
+
+            var value1=$(minValue).val();
+
+            // if(parseInt(value1) > parseInt(value2)){
+            //     value1 = value2;
+            //     $(minValue).val(value1);
+            // }
+            console.log('value1: ' + value1);
+            $(slide).slider("values",value1);
+        });
+
+
+
+
+        // $(maxValue).on('change', function(){
+        //
+        //     var value1=$(minValue).val();
+        //     var value2=$(maxValue).val();
+        //
+        //     if (value2 > maxDefault) {
+        //         value2 = maxDefault;
+        //         $(maxValue).val(maxDefault)
+        //     }
+        //
+        //     if(parseInt(value1) > parseInt(value2)){
+        //         value2 = value1;
+        //         $(maxValue).val(value2);
+        //     }
+        //     $(slide).slider("values",1,value2);
+        // });
+
+
+
+// фильтрация ввода в поля
+        $('input').keypress(function(event){
+            var key, keyChar;
+            if(!event) var event = window.event;
+
+            if (event.keyCode) key = event.keyCode;
+            else if(event.which) key = event.which;
+
+            if(key==null || key==0 || key==8 || key==13 || key==9 || key==46 || key==37 || key==39 ) return true;
+            keyChar=String.fromCharCode(key);
+
+            if(!/\d/.test(keyChar))	return false;
+
+        });
+    }
+
+    rangeSlider('#slider-price', '#minCost-price');
 });
