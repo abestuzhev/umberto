@@ -197,211 +197,180 @@
 
 
       <div class="order-title">Тип доставки</div>
-       <ul class="tabs-menu" id="tabs-delivery-list">
-           <li class="tabs-menu__item current"><a href="#delivery-courier">Доставка курьером</a></li>
-           <li class="tabs-menu__item"><a href="#delivery-pickup">Самовывоз</a></li>
-       </ul>
-       <div class="tab">
-               <div id="delivery-courier" class="tab-content">
-                   <div class="c-form-list">
-                     <div class="c-form-list__item">
-                         <select name="somename002" class="c-select">
-                             <option disabled="disabled" selected="selected">Город</option>
-                             <!--placeholder-->
-                             <option value="Калуга">Калуга</option>
-                             <option value="Москва">Москва</option>
-                             <option value="Санкт-Петербург">Санкт-Петербург</option>
-                         </select>
-                     </div>
-                       <div class="c-form-list__item">
-                           <div class="c-form-card">
-                               <label class="c-label" for="input-003">Улица</label>
-                               <input class="c-input" type="text" name="input-003" id="input-003">
-                           </div>
-                       </div>
-                       <div class="c-form-list__item">
-                           <div class="c-form-grid">
-                               <div class="c-form-grid__col c-form-col-4">
-                                   <div class="c-form-card">
-                                       <label class="c-label" for="input-005">Дом</label>
-                                       <input class="c-input" type="text" name="input-005" id="input-005">
-                                   </div>
-                               </div>
-                               <div class="c-form-grid__col c-form-col-4">
-                                   <div class="c-form-card">
-                                       <label class="c-label" for="input-006">Квартира</label>
-                                       <input class="c-input" type="text" name="input-006" id="input-006">
-                                   </div>
-                               </div>
-                               <div class="c-form-grid__col c-form-col-4">
-                                   <div class="c-form-card">
-                                       <label class="c-label" for="input-007">Подъезд</label>
-                                       <input class="c-input" type="text" name="input-007" id="input-007">
-                                   </div>
-                               </div>
-                               <div class="c-form-grid__col c-form-col-4">
-                                   <div class="c-form-card">
-                                       <label class="c-label" for="input-004">Этаж</label>
-                                       <input class="c-input" type="text" name="input-004" id="input-004">
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-
-                       <div class="c-form-list__item">
-                           <select name="somename002" class="c-select">
-                               <option disabled="disabled" selected="selected">Время получения заказа</option>
-                               <!--placeholder-->
-                               <option value="10:00">10:00</option>
-                               <option value="10:30">10:30</option>
-                               <option value="11:00">11:00</option>
-                               <option value="11:30">11:30</option>
-                               <option value="12:00">12:00</option>
-                               <option value="13:00">13:00</option>
-                               <option value="14:00">14:00</option>
-                               <option value="15:00">15:00</option>
-                           </select>
-                       </div>
-                       <div class="c-form-list__item">
-                           <div class="input-group-layout">
-                               <div class="input-group-label">Количество персон</div>
-                               <div class="input-group number-spinner number-spinner_div d-inline-flex">
-                                <span class="input-group-btn data-dwn">
-                                    <button style="" class="plusminus p-0 m-0" data-dir="dwn" disabled="">
-                                    <img class="plusminus_img" src="./img/minus-solid-orange.svg" alt="/">
-                                    </button>
-                                </span>
-                                   <input style="padding: 0; background: #fff;" type="text" class="form-control text-center count" readonly="" autocomplete="off" value=" 1 " min="1" max="40">
-                                <span class="input-group-btn data-up">
-                                    <button class=" plusminus p-0 m-0" data-dir="up" style="">
-                                    <img class="plusminus_img" src="./img/plus-solid-orange.svg" alt="/">
-                                    </button>
-                                </span>
-                               </div>
-                           </div>
-
-                       </div>
-
-                       <div class="order-block">
-                           <div class="order-bonus">
-                               <div class="order-title">У вас <span class="count-bonus">512</span> бонусных баллов</div>
-                               <div class="order-bonus-body">
 
 
-                                   <div class="range-slider">
-                                       <div class="range-slider-left">
-                                         <div class="sliderCont">
-                                             <div class="range-slider_default" id="slider-price"></div>
-                                         </div>
-                                       </div>
-                                       <div class="range-slider-right">
-                                         <div class="formCost">
-                                             <input type="text" id="minCost-price" min="0" max="512" value="0"/>
-                                         </div>
-                                         <a href="#" class="c-btn">Списать</a>
-                                       </div>
-
-
-                                   </div>
-
-                               </div>
-                           </div>
-                       </div>
-
-                       <div class="order-block">
-                           <div class="order-title">Вид оплаты</div>
-                           <div class="c-radio-payment">
-                               <div class="c-radio-payment__item">
-                                   <input type="radio" class="c-radio-payment__input" name="order-payment" id="type_payment_cash" checked>
-                                   <label for="type_payment_cash" class="c-radio-payment__label">Наличные</label>
-                               </div>
-                               <div class="c-radio-payment__item">
-                                   <input type="radio" class="c-radio-payment__input" name="order-payment" id="type_payment_card">
-                                   <label for="type_payment_card" class="c-radio-payment__label">Картой курьеру</label>
-                               </div>
-                               <div class="c-radio-payment__item">
-                                   <input type="radio" class="c-radio-payment__input" name="order-payment" id="type_payment_online">
-                                   <label for="type_payment_online" class="c-radio-payment__label">Онлайн</label>
-                               </div>
-                           </div>
-                       </div>
-                       <div class="order-block">
-                           <div class="order-total">
-                               <div class="order-total-list">
-                                   <div class="order-total-list__item">Сумма заказа 882 р.</div>
-                                   <div class="order-total-list__item">Доставка бесплатно</div>
-                                   <div class="order-total-list__item">Списываем 240 бонусных баллов</div>
-                               </div>
-                               <div class="order-total-sum">К оплате 642 р.</div>
-                           </div>
-                       </div>
+      <div class="c-form-list__item">
+        <div class="c-radio-payment">
+            <div class="c-radio-payment__item">
+                <input type="radio" class="c-radio-payment__input" name="order-delivert" id="type_delivery_1" checked>
+                <label for="type_delivery_1" class="c-radio-payment__label">Доставка курьером</label>
+            </div>
+            <div class="c-radio-payment__item">
+                <input type="radio" class="c-radio-payment__input" name="order-delivert" id="type_delivery_2">
+                <label for="type_delivery_2" class="c-radio-payment__label">Самовывоз</label>
+            </div>
+        </div>
+      </div>
 
 
 
+      <div class="c-form-list">
+        <div class="c-form-list__item">
+            <select name="somename002" class="c-select">
+                <option disabled="disabled" selected="selected">Город</option>
+                <!--placeholder-->
+                <option value="Калуга">Калуга</option>
+                <option value="Москва">Москва</option>
+                <option value="Санкт-Петербург">Санкт-Петербург</option>
+            </select>
+        </div>
 
 
-                       <div class="c-form-list__item">
-                           <div class="c-form-card">
-                               <label class="c-label" for="input-004">Комментарий к заказу</label>
-                               <textarea class="c-textarea" name="textarea001" id="textarea001" rows="6"></textarea>
-                           </div>
+          <div class="c-form-list__item">
+              <div class="c-form-card">
+                  <label class="c-label" for="input-003">Улица</label>
+                  <input class="c-input" type="text" name="input-003" id="input-003">
+              </div>
+          </div>
+          <div class="c-form-list__item">
+              <div class="c-form-grid">
+                  <div class="c-form-grid__col c-form-col-4">
+                      <div class="c-form-card">
+                          <label class="c-label" for="input-005">Дом</label>
+                          <input class="c-input" type="text" name="input-005" id="input-005">
+                      </div>
+                  </div>
+                  <div class="c-form-grid__col c-form-col-4">
+                      <div class="c-form-card">
+                          <label class="c-label" for="input-006">Квартира</label>
+                          <input class="c-input" type="text" name="input-006" id="input-006">
+                      </div>
+                  </div>
+                  <div class="c-form-grid__col c-form-col-4">
+                      <div class="c-form-card">
+                          <label class="c-label" for="input-007">Подъезд</label>
+                          <input class="c-input" type="text" name="input-007" id="input-007">
+                      </div>
+                  </div>
+                  <div class="c-form-grid__col c-form-col-4">
+                      <div class="c-form-card">
+                          <label class="c-label" for="input-004">Этаж</label>
+                          <input class="c-input" type="text" name="input-004" id="input-004">
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-                       </div>
-                       <div class="c-form-list__item">
-                           <div class="order-btns">
-                             <div class="order-btns__item">
-                               <a href="#" class="c-btn c-btn--width">Назад в корзину</a>
-                             </div>
-                             <div class="order-btns__item">
-                               <button class="c-btn c-btn--width c-btn--bg">Заказать</button>
-                             </div>
+          <div class="c-form-list__item">
+              <select name="somename002" class="c-select">
+                  <option disabled="disabled" selected="selected">Время получения заказа</option>
+                  <!--placeholder-->
+                  <option value="10:00">10:00</option>
+                  <option value="10:30">10:30</option>
+                  <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
+                  <option value="12:00">12:00</option>
+                  <option value="13:00">13:00</option>
+                  <option value="14:00">14:00</option>
+                  <option value="15:00">15:00</option>
+              </select>
+          </div>
+          <div class="c-form-list__item">
+              <div class="input-group-layout">
+                  <div class="input-group-label">Количество персон</div>
+                  <div class="input-group number-spinner number-spinner_div d-inline-flex">
+                   <span class="input-group-btn data-dwn">
+                       <button style="" class="plusminus p-0 m-0" data-dir="dwn" disabled="">
+                       <img class="plusminus_img" src="./img/minus-solid-orange.svg" alt="/">
+                       </button>
+                   </span>
+                      <input style="padding: 0; background: #fff;" type="text" class="form-control text-center count" readonly="" autocomplete="off" value=" 1 " min="1" max="40">
+                   <span class="input-group-btn data-up">
+                       <button class=" plusminus p-0 m-0" data-dir="up" style="">
+                       <img class="plusminus_img" src="./img/plus-solid-orange.svg" alt="/">
+                       </button>
+                   </span>
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="order-block">
+              <div class="order-bonus">
+                  <div class="order-title">У вас <span class="count-bonus">512</span> бонусных баллов</div>
+                  <div class="order-bonus-body">
 
 
-                           </div>
+                      <div class="range-slider">
+                          <div class="range-slider-left">
+                            <div class="sliderCont">
+                                <div class="range-slider_default" id="slider-price"></div>
+                            </div>
+                          </div>
+                          <div class="range-slider-right">
+                            <div class="formCost">
+                                <input type="text" id="minCost-price" min="0" max="512" value="0"/>
+                            </div>
+                            <a href="#" class="c-btn">Списать</a>
+                          </div>
 
-                       </div>
-                   </div>
-               </div>
-               <div id="delivery-pickup" class="tab-content">
-                   <div class="c-form-list">
-                       <div class="c-form-list__item">
-                           <div class="c-form-card">
-                               <label class="c-label" for="input-010">Ваше имя</label>
-                               <input class="c-input" type="text" name="input-010" id="input-010">
-                           </div>
-                       </div>
-                       <div class="c-form-list__item">
-                           <div class="c-form-card">
-                               <label class="c-label" for="input-011">Телефон</label>
-                               <input class="c-input" type="text" name="input-002" id="input-011">
-                           </div>
-                       </div>
-                       <div class="c-form-list__item">
-                           <select name="somename001" class="c-select">
-                               <option disabled="disabled" selected="selected">Количество персон</option>
-                               <!--placeholder-->
-                               <option value="1">1</option>
-                               <option value="2">2</option>
-                               <option value="3">3</option>
-                               <option value="4">4</option>
-                               <option value="5">5</option>
-                               <option value="6">6</option>
-                               <option value="7-10">7-10</option>
-                           </select>
-                       </div>
-                       <div class="c-form-list__item">
-                           <div class="c-form-card">
-                               <label class="c-label" for="input-004">Комментарий к заказу</label>
-                               <textarea class="c-textarea" name="textarea001" id="textarea001" rows="6"></textarea>
-                           </div>
 
-                       </div>
-                       <div class="c-form-list__item">
-                           <button class="c-btn c-btn--width c-btn--bg">Отправить</button>
-                       </div>
-                   </div>
-               </div>
-       </div>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+          <div class="order-block">
+              <div class="order-title">Вид оплаты</div>
+              <div class="c-radio-payment">
+                  <div class="c-radio-payment__item">
+                      <input type="radio" class="c-radio-payment__input" name="order-payment" id="type_payment_cash" checked>
+                      <label for="type_payment_cash" class="c-radio-payment__label">Наличные</label>
+                  </div>
+                  <div class="c-radio-payment__item">
+                      <input type="radio" class="c-radio-payment__input" name="order-payment" id="type_payment_card">
+                      <label for="type_payment_card" class="c-radio-payment__label">Картой курьеру</label>
+                  </div>
+                  <div class="c-radio-payment__item">
+                      <input type="radio" class="c-radio-payment__input" name="order-payment" id="type_payment_online">
+                      <label for="type_payment_online" class="c-radio-payment__label">Онлайн</label>
+                  </div>
+              </div>
+          </div>
+          <div class="order-block">
+              <div class="order-total">
+                  <div class="order-total-list">
+                      <div class="order-total-list__item">Сумма заказа 882 р.</div>
+                      <div class="order-total-list__item">Доставка бесплатно</div>
+                      <div class="order-total-list__item">Списываем 240 бонусных баллов</div>
+                  </div>
+                  <div class="order-total-sum">К оплате 642 р.</div>
+              </div>
+          </div>
+
+
+          <div class="c-form-list__item">
+              <div class="c-form-card">
+                  <label class="c-label" for="input-004">Комментарий к заказу</label>
+                  <textarea class="c-textarea" name="textarea001" id="textarea001" rows="6"></textarea>
+              </div>
+
+          </div>
+          <div class="c-form-list__item">
+              <div class="order-btns">
+                <div class="order-btns__item">
+                  <a href="#" class="c-btn c-btn--width">Назад в корзину</a>
+                </div>
+                <div class="order-btns__item">
+                  <button class="c-btn c-btn--width c-btn--bg">Заказать</button>
+                </div>
+
+
+              </div>
+
+          </div>
+      </div>
 
         <div class="order-regulations">
           <ul class="order-regulations-list">
