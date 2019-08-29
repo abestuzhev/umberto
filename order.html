@@ -202,11 +202,11 @@
       <div class="c-form-list__item">
         <div class="c-radio-payment">
             <div class="c-radio-payment__item">
-                <input type="radio" class="c-radio-payment__input" name="order-delivert" id="type_delivery_1" checked>
+                <input type="radio" class="c-radio-payment__input" name="order-delivery" id="type_delivery_1" checked>
                 <label for="type_delivery_1" class="c-radio-payment__label">Доставка курьером</label>
             </div>
             <div class="c-radio-payment__item">
-                <input type="radio" class="c-radio-payment__input" name="order-delivert" id="type_delivery_2">
+                <input type="radio" class="c-radio-payment__input" name="order-delivery" id="type_delivery_2">
                 <label for="type_delivery_2" class="c-radio-payment__label">Самовывоз</label>
             </div>
         </div>
@@ -215,66 +215,68 @@
 
 
       <div class="c-form-list">
-        <div class="c-form-list__item">
-            <select name="somename002" class="c-select">
-                <option disabled="disabled" selected="selected">Город</option>
-                <!--placeholder-->
-                <option value="Калуга">Калуга</option>
-                <option value="Москва">Москва</option>
-                <option value="Санкт-Петербург">Санкт-Петербург</option>
-            </select>
-        </div>
-
-
-          <div class="c-form-list__item">
-              <div class="c-form-card">
-                  <label class="c-label" for="input-003">Улица</label>
-                  <input class="c-input" type="text" name="input-003" id="input-003">
-              </div>
-          </div>
-          <div class="c-form-list__item">
-              <div class="c-form-grid">
-                  <div class="c-form-grid__col c-form-col-4">
-                      <div class="c-form-card">
-                          <label class="c-label" for="input-005">Дом</label>
-                          <input class="c-input" type="text" name="input-005" id="input-005">
-                      </div>
-                  </div>
-                  <div class="c-form-grid__col c-form-col-4">
-                      <div class="c-form-card">
-                          <label class="c-label" for="input-006">Квартира</label>
-                          <input class="c-input" type="text" name="input-006" id="input-006">
-                      </div>
-                  </div>
-                  <div class="c-form-grid__col c-form-col-4">
-                      <div class="c-form-card">
-                          <label class="c-label" for="input-007">Подъезд</label>
-                          <input class="c-input" type="text" name="input-007" id="input-007">
-                      </div>
-                  </div>
-                  <div class="c-form-grid__col c-form-col-4">
-                      <div class="c-form-card">
-                          <label class="c-label" for="input-004">Этаж</label>
-                          <input class="c-input" type="text" name="input-004" id="input-004">
-                      </div>
-                  </div>
-              </div>
-          </div>
-
+        <div class="order-delivery-courier">
           <div class="c-form-list__item">
               <select name="somename002" class="c-select">
-                  <option disabled="disabled" selected="selected">Время получения заказа</option>
+                  <option disabled="disabled" selected="selected">Город</option>
                   <!--placeholder-->
-                  <option value="10:00">10:00</option>
-                  <option value="10:30">10:30</option>
-                  <option value="11:00">11:00</option>
-                  <option value="11:30">11:30</option>
-                  <option value="12:00">12:00</option>
-                  <option value="13:00">13:00</option>
-                  <option value="14:00">14:00</option>
-                  <option value="15:00">15:00</option>
+                  <option value="Калуга">Калуга</option>
+                  <option value="Москва">Москва</option>
+                  <option value="Санкт-Петербург">Санкт-Петербург</option>
               </select>
           </div>
+
+
+            <div class="c-form-list__item">
+                <div class="c-form-card">
+                    <label class="c-label" for="input-003">Улица</label>
+                    <input class="c-input" type="text" name="input-003" id="input-003">
+                </div>
+            </div>
+            <div class="c-form-list__item">
+                <div class="c-form-grid">
+                    <div class="c-form-grid__col c-form-col-4">
+                        <div class="c-form-card">
+                            <label class="c-label" for="input-005">Дом</label>
+                            <input class="c-input" type="text" name="input-005" id="input-005">
+                        </div>
+                    </div>
+                    <div class="c-form-grid__col c-form-col-4">
+                        <div class="c-form-card">
+                            <label class="c-label" for="input-006">Квартира</label>
+                            <input class="c-input" type="text" name="input-006" id="input-006">
+                        </div>
+                    </div>
+                    <div class="c-form-grid__col c-form-col-4">
+                        <div class="c-form-card">
+                            <label class="c-label" for="input-007">Подъезд</label>
+                            <input class="c-input" type="text" name="input-007" id="input-007">
+                        </div>
+                    </div>
+                    <div class="c-form-grid__col c-form-col-4">
+                        <div class="c-form-card">
+                            <label class="c-label" for="input-004">Этаж</label>
+                            <input class="c-input" type="text" name="input-004" id="input-004">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-form-list__item">
+                <select name="somename002" class="c-select">
+                    <option disabled="disabled" selected="selected">Время получения заказа</option>
+                    <option value="10:00">10:00</option>
+                    <option value="10:30">10:30</option>
+                    <option value="11:00">11:00</option>
+                    <option value="11:30">11:30</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                </select>
+            </div>
+        </div>
+
           <div class="c-form-list__item">
               <div class="input-group-layout">
                   <div class="input-group-label">Количество персон</div>

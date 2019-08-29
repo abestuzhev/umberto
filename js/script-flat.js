@@ -112,4 +112,18 @@ $(function(){
     }
 
     rangeSlider('#slider-price', '#minCost-price');
+
+
+    $().on('change', function(){
+
+    })
+
+    $('.c-radio-payment__input').on('click', function(e) {
+      // e.preventDefault();
+       if($('#type_delivery_1').is(':checked')) {
+          $('.order-delivery-courier').slideDown(300);
+       }else {
+         $('.order-delivery-courier').slideUp(300);
+       }
+    });
 });
