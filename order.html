@@ -177,8 +177,24 @@
 <div class="container">
     <div class="page-title">Оформление заказа</div>
    <div class="order">
+      <form action="" method="post" class="c-form">
+        <div class="order-title">Контактные данные</div>
+        <div class="c-form-list">
+          <div class="c-form-list__item">
+              <div class="c-form-card">
+                  <label class="c-label" for="input-001">Ваше имя</label>
+                  <input class="c-input" type="text" name="input-001" id="input-001">
+              </div>
+          </div>
+          <div class="c-form-list__item">
+              <div class="c-form-card">
+                  <label class="c-label" for="input-002">Телефон</label>
+                  <input class="c-input" type="text" name="input-002" id="input-002">
+              </div>
+          </div>
+        </div>
 
-       <div class="order-title">Контактные данные</div>
+
 
       <div class="order-title">Тип доставки</div>
        <ul class="tabs-menu" id="tabs-delivery-list">
@@ -186,21 +202,17 @@
            <li class="tabs-menu__item"><a href="#delivery-pickup">Самовывоз</a></li>
        </ul>
        <div class="tab">
-           <form action="" method="post" class="c-form">
                <div id="delivery-courier" class="tab-content">
                    <div class="c-form-list">
-                       <div class="c-form-list__item">
-                           <div class="c-form-card">
-                               <label class="c-label" for="input-001">Ваше имя</label>
-                               <input class="c-input" type="text" name="input-001" id="input-001">
-                           </div>
-                       </div>
-                       <div class="c-form-list__item">
-                           <div class="c-form-card">
-                               <label class="c-label" for="input-002">Телефон</label>
-                               <input class="c-input" type="text" name="input-002" id="input-002">
-                           </div>
-                       </div>
+                     <div class="c-form-list__item">
+                         <select name="somename002" class="c-select">
+                             <option disabled="disabled" selected="selected">Город</option>
+                             <!--placeholder-->
+                             <option value="Калуга">Калуга</option>
+                             <option value="Москва">Москва</option>
+                             <option value="Санкт-Петербург">Санкт-Петербург</option>
+                         </select>
+                     </div>
                        <div class="c-form-list__item">
                            <div class="c-form-card">
                                <label class="c-label" for="input-003">Улица</label>
@@ -277,15 +289,19 @@
 
 
                                    <div class="range-slider">
-                                       <div class="range-slider-left"></div>
-                                       <div class="range-slider-right"></div>
-                                       <div class="sliderCont">
-                                           <div class="range-slider_default" id="slider-price"></div>
+                                       <div class="range-slider-left">
+                                         <div class="sliderCont">
+                                             <div class="range-slider_default" id="slider-price"></div>
+                                         </div>
                                        </div>
-                                       <div class="formCost">
-                                           <input type="text" id="minCost-price" min="0" max="512" value="0"/>
+                                       <div class="range-slider-right">
+                                         <div class="formCost">
+                                             <input type="text" id="minCost-price" min="0" max="512" value="0"/>
+                                         </div>
+                                         <a href="#" class="c-btn">Списать</a>
                                        </div>
-                                       <a href="#" class="c-btn">Списать</a>
+
+
                                    </div>
 
                                </div>
@@ -332,7 +348,17 @@
 
                        </div>
                        <div class="c-form-list__item">
-                           <button class="c-btn c-btn--width c-btn--bg">Отправить</button>
+                           <div class="order-btns">
+                             <div class="order-btns__item">
+                               <a href="#" class="c-btn c-btn--width">Назад в корзину</a>
+                             </div>
+                             <div class="order-btns__item">
+                               <button class="c-btn c-btn--width c-btn--bg">Заказать</button>
+                             </div>
+
+
+                           </div>
+
                        </div>
                    </div>
                </div>
@@ -375,7 +401,6 @@
                        </div>
                    </div>
                </div>
-           </form>
        </div>
 
         <div class="order-regulations">
@@ -401,11 +426,7 @@
           </ul>
         </div>
 
-
-
-
-
-
+      </form>
    </div>
 </div>
 
