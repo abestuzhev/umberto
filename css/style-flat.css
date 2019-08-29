@@ -673,13 +673,13 @@ a {
 }
 
 .c-label {
-    position: absolute;
+    /*position: absolute;*/
     top: 12px;
     left: 17px;
     transition: all .2s ease;
     font-size: 15px;
     color: #808080;
-    margin: 0;
+    margin: 0 0 4px 0;
 }
 
 .c-input {
