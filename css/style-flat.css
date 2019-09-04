@@ -2050,3 +2050,7 @@ input:invalid, textarea:focus:invalid {
 
 
 }
+
+.c-currency-symbol.rub {
+    font-family: pt_sans_rub !important;
+}
