@@ -2054,3 +2054,44 @@ input:invalid, textarea:focus:invalid {
 .c-currency-symbol.rub {
     font-family: pt_sans_rub !important;
 }
+
+/*modal popup style*/
+
+@media (min-width: 576px) {
+    .modal-dialog.v2 {
+        max-width: 410px;
+    }
+}
+
+
+.modal-dialog.v2 .modal-content {
+    padding: 30px;
+}
+
+.modal-dialog.v2 .modal-header {
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+.modal-dialog.v2 .modal-bottom,
+.modal-dialog.v2 .form-group-modal {
+    margin-bottom: 14px;
+}
+
+.modal-dialog.v2 .modal--block__a {
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.modal-dialog.v2 .modal-bottom,
+.modal-dialog.v2 .modal-label,
+.modal-dialog.v2 .modal-body {
+    padding: 0;
+    
+}
+
+.modal-dialog.v2 .form-group-modal {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
