@@ -126,4 +126,9 @@ $(function(){
          $('.order-delivery-courier').slideUp(300);
        }
     });
+
+
+    if($('body').hasClass('modal-open')){
+        $('html').ad
+    }
 });
