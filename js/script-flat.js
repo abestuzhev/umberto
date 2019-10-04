@@ -2,17 +2,34 @@ $(function(){
     var HeaderCurrentPos = $(".header-nav-layout").offset().top;
     var windowEl = $(window);
     var main = $(".header-nav-layout");
+    var header = $(".header");
+
+    $('body').css({
+        'padding-top': header.height()
+    });
+
 // var mainHeight = main.height();
 // var mainWrap = $(".header-nav-layout");
     windowEl.on('scroll', function(){
         var scrollPos = windowEl.scrollTop();
         if (HeaderCurrentPos <= scrollPos) {
             main.addClass("header-nav-fixed");
+            header.addClass("header-fixed");
+            // main.css({
+            //     'position': 'fixed',
+            //     'top': '0',
+            //     'width': '100%'
+            // });
+
             // mainWrap.css("height" , mainHeight);
             // console.log('yes');
         } else {
             main.removeClass("header-nav-fixed");
+            header.removeClass("header-fixed");
             // console.log('no');
+            // $('body').css({
+            //     'padding-top': 0
+            // });
         }
     });
 

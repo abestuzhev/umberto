@@ -331,7 +331,7 @@ a {
     color: #333333;
     font-size: 16px;
     line-height: 1;
-    margin-right: 40px;
+    margin-right: 25px;
     font-weight: 700;
     text-decoration: none;
     -webkit-transition: all .1s ease;
@@ -362,11 +362,11 @@ a {
 .header-nav-phone-list {
     -webkit-transform: translateX(-400px);
     transform: translateX(-400px);
-    -webkit-transition: transform .45s ease;
-    -moz-transition: transform .45s ease;
-    -ms-transition: transform .45s ease;
-    -o-transition: transform .45s ease;
-    transition: transform .45s ease;
+    -webkit-transition: transform .8s ease;
+    -moz-transition: transform .8s ease;
+    -ms-transition: transform .8s ease;
+    -o-transition: transform .8s ease;
+    transition: transform .8s ease;
 }
 
 .header-nav-phone a {
@@ -460,11 +460,11 @@ a {
 .header-nav-fixed .header-nav-logo__link {
     -webkit-transform: translateX(0);
     transform: translateX(0);
-    -webkit-transition: transform .25s ease;
-    -moz-transition: transform .25s ease;
-    -ms-transition: transform .25s ease;
-    -o-transition: transform .25s ease;
-    transition: transform .25s ease;
+    -webkit-transition: transform .6s ease;
+    -moz-transition: transform .6s ease;
+    -ms-transition: transform .6s ease;
+    -o-transition: transform .6s ease;
+    transition: transform .6s ease;
 }
 
 .header-nav-fixed .header-nav-menu__link {
@@ -2134,4 +2134,49 @@ body, html {
     padding: 0;
     margin-left: 0;
     margin-right: 0;
+}
+
+
+
+
+.header-top {
+    padding: 5px 10px;
+}
+
+
+.header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: transform .25s ease;
+}
+
+.header-nav-fixed {
+     position: static;
+     top: 0;
+     width: 100%;
+}
+
+.header-top-layout {
+
+
+}
+
+.header.header-fixed {
+    transform:translateY(-92px);
+    transition: transform .25s ease;
+}
+
+@media(max-width:780px){
+    .header.header-fixed {
+        transform: translateY(0);
+
+
+    }
+    body {
+        padding-top: 49px !important;
+    }
 }
